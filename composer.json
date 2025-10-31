@@ -1,0 +1,43 @@
+{
+  "name": "ethantechnology/php-jwk",
+  "description": "A small PHP library to handle JWKs (Json Web Keys)",
+  "type": "library",
+  "keywords": ["jwk", "jwks"],
+  "homepage": "https://github.com/ethantechnology/php-jwk",
+  "authors": [
+    {
+      "name": "Ethantech",
+      "email": "info@ethantech.com",
+      "homepage": "https://www.ethantech.com",
+      "role": "Developer"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=7.3.0",
+    "ext-json": "*",
+    "ext-openssl": "*",
+    "phpseclib/phpseclib": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ethantechnology\\JWK\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Ethantechnology\\JWK\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "ext-xml": "*",
+    "phpunit/phpunit": "^10.0",
+    "friendsofphp/php-cs-fixer": "3.54.0"
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit"
+  },
+  "scripts-descriptions": {
+    "test": "Run all tests"
+  }
+}
